@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styleLoginSignUp.css" >
+</head>
+
+<body >
+
+    <form id="formContainer"  method="get" action="" onsubmit="setData()">
+        <div id="user_name">
+            <h1>sign up / new registration </h1>
+            <label for="username">Username:</label>
+            <input type="text"  id="username" placeholder="Enter Your Username " name="userName" required>
+        </div>
+        <div id="email">
+            <label for="E-mail">E-mail:</label>
+            <input type="email"  id="E-mail" placeholder="example@e-mail.com" style="margin-left: 65px;" name="userEmail" required>
+        </div>
+        <div id="pass">
+            <label for="password">Password:</label>
+            <input type="password"  id="password" placeholder="password" name="userPass" required>
+        </div>
+        <div id="confirm_pass">
+            <label for="confpass" style="margin-right: 10px;">Confirm pass</label>
+            <input type="password"  id="confpass" placeholder="Confirm password" style="margin-right: 50px;" name="confirmPass" required>
+        </div>
+        
+            
+        <button type="submit"><a href="index.html">Submit</a></button>
+
+       
+    </form>
+    <script src="project.js"></script>
+</body>
+
+</html>

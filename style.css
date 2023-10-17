@@ -1,0 +1,680 @@
+    
+    
+    /*          style sheet for home page and main projest */
+    
+    
+    *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+a{
+  text-decoration: none ;
+}
+html{
+  scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    display: flex;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #192a48;
+    height: 20px;
+    z-index: 5;
+    border-bottom: 1px solid slategray;
+}
+
+
+#headline a{
+    text-decoration: none;
+    font-size: 32px;
+    color: #ffffff;
+    padding: 0 10px;
+}
+#ul ul li{
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    transition: .3s ease-in-out; 
+    letter-spacing: 1px;
+   
+}
+#ul ul a{
+  text-decoration: none;
+  padding: 5px;
+  text-align:center ;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+#icons a i{
+padding: 10px;
+color: #ffffff;
+font-size: 22px;
+transition: .4s ease-in-out;
+
+}
+
+#icons a i:hover{
+color: #142347;
+background-color: #257178ff;
+border-radius: 100%;
+
+}
+body{
+   background-color: #192a48;
+}
+
+/* <!--       scroll up button and opacity on scrolled pictures (frist section)  --> */
+#scrollImage{
+  position: relative;
+  width: 100%;
+  height: auto;
+ 
+}
+#peusudo{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 60%;
+  display: flex;
+  justify-content: center;
+  }
+  #peusudo p{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 38px;
+    color: #ffffffff;
+    letter-spacing: 5px;
+    background-color: rgba(0, 0, 0, 0.559);
+    border-radius: 20px;
+    padding: 10px 20px;
+    
+  }
+  
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 28px;
+    border: none;
+    outline: none;
+    background-color:#2aafb980;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px ;
+    transition: .4s ease-in-out;
+  }
+  
+  #myBtn:hover{
+    background-color: #3b78b5;
+    transform: scale(1.05);
+  }
+
+   /*  ________________products section _____________________ */
+#down{
+    background-image: linear-gradient(to bottom, rgba(65, 105, 225, 0.616),rgba(0, 0, 0, 0.553)),url(/tttt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+     display: flex; 
+    justify-content: space-evenly;
+     align-items: center;
+    flex-wrap: wrap;
+    
+     
+}
+
+
+.ahmed {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .image {
+    
+    width: 80%;
+    height: 200px;
+    border-radius: 20px;
+    
+    
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(17, 34, 51, 0.701);
+    overflow: hidden;
+    width: 80%;
+    height: 0;
+    transition: .5s ease-in-out;
+    border-radius: 20px;
+  }
+  
+  .ahmed:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #para{
+    
+    font-size: 32px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    padding: 10px;
+    margin: 25px;
+    transition: .5s ease-in-out;
+    letter-spacing: 3px;
+    width: 100%;
+    text-align: center;
+  
+    
+
+  }
+  #para:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+   #content .menue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: rgb(173, 168, 154);
+    letter-spacing: 2px;
+    transition: .3s;
+  }
+  #content .menue:hover{
+    
+    transform: skew(-30deg);
+  }
+  .ahmed .press{
+    border: none;
+    font-size: 22px;
+    background-color: darkslategrey;
+    padding: 5px;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+    
+
+  }
+  .ahmed .press a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .ahmed{
+    width: 30%;
+    margin: 20px 0;
+  }
+
+  .ahmed .press:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+    border: 1px solid darkgray;
+    cursor: pointer;
+    color: #4ac4cf;
+  }
+  /* <!- _________________products (5 products )______________ --> */
+
+
+
+
+
+
+  #cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  #cont .polaroid {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 35%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+    border-radius: 10px;
+      transition: .5s ease-in-out;
+  }
+  div .polaroid:hover{
+    transform: scaleX(1.05);
+    cursor: pointer;
+  }
+  
+  div .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  div .container a{
+    text-decoration: none;
+     font-size: 22px;
+     color: rgb(30, 117, 204); 
+}
+  div .container p{
+  color: rgb(35, 131, 227);
+  margin:  0 20px;
+  
+}
+#cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+  #cont .pro{
+  
+    border: 1px solid gray;
+    border-radius: 10px;
+
+
+
+
+  }
+
+
+
+
+
+  /* ____________________about page (external page)_______________________ */
+
+
+  #about h1, h2{
+    margin: 32px;
+    color: rgb(114, 184, 212);
+    
+  }
+  .martin {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.201);
+
+  }
+  .martin  p{
+    padding-left: 20px ;
+  }
+
+
+
+
+  header {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+h1 {
+  color: white;
+    font-size: 36px;
+}
+
+#about, #coffee, #space, #mission, #sustainability, #journey, #visit{
+    padding: 20px 0;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+    color: white;
+}
+
+p {
+  font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: white;
+  }
+  /* big footer */
+  footer{
+    background-color: #00000090;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  /* small footer */
+  #foot{
+    position: relative;
+    bottom: 0;
+    top: 100px;
+    background-color: #00000090;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 50px;
+    height: 20px;
+    width:100%;
+  }
+  
+  footer p{
+    font-size: 18px;
+  }
+
+
+
+ 
+/*_____________________Rating form________________________*/
+
+#ratingForm h1{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#ratingForm label{
+  text-transform: capitalize;
+  font-size: 25px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+ 
+  
+  .form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 50px;
+  border: 1px solid gray;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.301);
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(65, 105, 225, 0.495), rgba(169, 169, 169, 0.486)),url(/airpods/miguel-angel-avila-3p5cPfbpVTc-unsplash22.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+
+}
+
+
+#ratingForm{
+ padding: 50px;
+}
+#ratingForm .comment{
+  width: 400px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #192a4862;
+  font-size: 25px;
+  color: #ffffff;
+  outline: none;
+  resize: none;
+}
+
+.rating {
+  display: inline-block;
+  color: #ffffff;
+  margin: 20px;
+}
+
+.rating input {
+  display: none;
+}
+#form{
+  display: flex;
+   justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #4ac4cf;
+}
+#form #submit{
+  border: none;
+  font-size: 32px;
+  width: 80%;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #1f325d;
+  transition: .5s ease-in-out;
+  color: #ffffff;
+}
+#form #submit:hover{
+  cursor: pointer;
+  transform: scaleX(1.05);
+  background-color: #ffffff;
+  color: #1f325d;
+  font-weight: 500;
+
+}
+.rating label {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.rating label:before {
+  content: "\2605"; /* Unicode character for a star (★) */
+  margin: 5px;
+}
+
+.rating input:checked ~ label:before {
+  color: gold;
+}
+
+.message-box {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e9e9e9;
+}
+
+/* _________________________side navbar ________________________________ */
+
+
+#fixed {
+  position: fixed;
+  top: 15%;
+  left: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.516);
+  border-radius: 10px;
+}
+#fixed li{
+  margin: 7px 5px; 
+  padding: 7px 5px;
+  transition: .7s ease;
+  text-decoration: none;
+  list-style: none;
+  
+}
+#fixed li a{
+  text-decoration: none;
+  list-style: none;
+  color: gray;
+  font-size: 22px;
+  cursor: pointer;
+}
+#fixed li:hover, .activ {
+  transform: rotate(360deg);
+  background-color: #257178;
+  border-radius: 10px;
+  /* transform: translateX(50%); */
+}
+
+
+
+
+/*   ________________ media query__________________ */
+
+@media screen and (max-width: 575px) {
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  #ul ul a{
+    display: none;
+  }
+  #content #para{
+    text-align: center;
+    width: 90%;
+  }
+  #down{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+   width: fit-content;
+   height: 100%;
+   
+   
+  }
+  .ahmed {
+    display: block;
+    width: 100%;
+    margin-left: 50px;
+  }
+  .frame{
+    width: 100%;
+  }
+  #cont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+   .container{
+    width: 100%;
+  }
+
+ #cont .polaroid {
+  width: 100%;
+ }
+  
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  #ul ul a{
+    display: none;
+  }
+  #content #para{
+    text-align: center;
+    width: 90%;
+  }
+  #down{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+   width: fit-content;
+   height: 100%;
+   
+   
+  }
+  .ahmed {
+    display: block;
+    width: 100%;
+    margin-left: 50px;
+  }
+  .frame{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  #ul ul a{
+    display: none;
+  }
+  #content #para{
+    text-align: center;
+    width: 90%;
+  }
+  #icons a i {
+    padding: 0; 
+    margin: 0;
+  }
+  #down{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+   width: fit-content;
+   height: 100%;
+   
+   
+  }
+  .ahmed {
+    display: block;
+    width: 100%;
+    margin-left: 50px;
+  }
+  .frame{
+    width: 100%;
+  }
+  #cont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+   .container{
+    width: 100%;
+  }
+
+ #cont .polaroid {
+  width: 100%;
+ }
+}
+
+
+ 
+  

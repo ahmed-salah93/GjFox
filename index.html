@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Electronics site</title>
+
+</head>
+
+<body onload="changePicture()">
+
+
+
+                                 <!--header- navbar -->  
+
+  <header id= "navbar" >
+    <div id="headline">
+      <!--                  home/ about / contact / products -->
+      <a href="project.html"><img src="logo-removebg-preview.png" width="150px" height="40px">
+      </a>
+    </div>
+    <div id="ul">
+      <ul>
+        <a href="#peusudo" class="li" onmouseenter="change_Bg(this)" onmouseleave="return_Bg(this)">
+          <li>HOME</li>
+        </a>
+        <a href="#ahmed" class="li" onmouseenter="change_Bg(this)" onmouseleave="return_Bg(this)">
+          <li>PRODUCTS</li>
+        </a>
+        <a href="contact us.html" class="li" onmouseenter="change_Bg(this)" onmouseleave="return_Bg(this)">
+          <li>CONTACTS</li>
+        </a>
+        <a href="Abuout.html" class="li" onmouseenter="change_Bg(this)" onmouseleave="return_Bg(this)">
+          <li >ABOUT</li>
+        </a>
+
+      </ul>
+    </div>
+
+     <!--_______________________  links (facebook/ insta/ cart / etc)__________ -->
+    <div id="icons">
+      <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+      <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="login.html" style="margin-left: 30px;"><i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="login.html"><i class="fa-regular fa-heart"></i></a>
+      <a href="login.html"><i class="fa-solid fa-user"></i></a>
+
+    </div>
+
+  </header>
+
+  <main>
+    <div style="color: black; opacity: 0.4;">
+
+      <!--                     opacity on scrolled pictures (frist section)  -->
+      <div id="peusudo">    
+        <p>BUY MORE.. PAY LESS..</p>
+      </div>
+      <pre></pre>
+
+
+
+
+
+      <img src="Camera/66.jpg" alt="" id="scrollImg" width="100%" height="500px">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+                     <!--          scoll up button ( ^ )   -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+
+
+
+
+
+
+
+
+
+    <div id="down">
+
+
+            <!--__________________main section (prodects)________________ -->
+      <div id="content">
+        <div id="para">Products and Categories</div>
+        <a href="new page categories.html"><h2 class="menue" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)">airpods</h2></a>
+        <a href="headphones.html"><h2 class="menue" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)">headphones</h2></a>
+        <a href="handfree.html"><h2 class="menue" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)">handfree</h2></a>
+        <a href="smartwatches.html"><h2 class="menue" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)">smart watch</h2></a>
+        <a href="powerbanks.html"><h2 class="menue" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)">power bank</h2></a>
+        <a href="camera.html"><h2 class="menue" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)">Camera</h2></a>
+      </div>
+
+
+
+
+
+   <!--__________________________first catagoery____________________-->
+
+      <section id="ahmed" class="ahmed">
+        <img src="HD-wallpaper-garmin-watches-smart-watch-watches-technology-garmin-high-tech.jpg" alt="photo"
+          class="image">
+        <div class="overlay">
+          <div class="text">latest verions of smart watches new technology that
+            makes lives better. <br>
+            <button class="press"><a href="smartwatches.html" target="_blank">More Details</a></button>
+          </div>
+        </div>
+      </section>
+      <!--         second catagoery        -->
+
+      <div class="ahmed">
+        <img src="HD-wallpaper-apple-airpods-3rd-gen-apple-october-2021-event.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">latest verions of airpods new technology that
+            makes lives easier. <br>
+            <button class="press"><a href="new page categories.html" target="_blank">More Details</a></button>
+          </div>
+        </div>
+      </div>
+
+                                <!--         third catagoery        -->
+
+      <div class="ahmed">
+        <img src="headphone2.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">latest verion of Headphones new technology that
+            makes lives better. <br>
+            <button class="press"><a href="headphones.html" target="_blank">More Details</a></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- _________________ fourth catagoery_________________ -->
+
+      <div class="ahmed">
+        <img src="handfree/yalla.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">latest verion of handfree new technology that
+            makes lives wonderful. <br>
+            <button class="press"><a href="handfree.html" target="_blank">More Details</a></button>
+
+          </div>
+        </div>
+      </div>
+
+                                <!--         5th catagoery        -->
+      <div class="ahmed">
+        <img src="power banks/44.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">latest verion of power banks new technology that
+            makes lives better. <br>
+            <button class="press"><a href="powerbanks.html" target="_blank">More Details</a></button>
+          </div>
+        </div>
+      </div>
+
+                          <!--         6th catagoery        -->
+      <div class="ahmed">
+        <img src="Camera/benjamin-raffetseder-HDIUUSO5C8g-unsplash.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">latest verion of camera new technology that
+            makes lives obvious. <br>
+            <button class="press"><a href="camera.html" target="_blank">More Details</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+<!-- ________________________________________________________________________ -->
+
+
+
+
+              <!-- __________________rating Form_______________________            -->
+
+  <section id="form">
+    <div class="form-container">
+      <form id="ratingForm">
+        
+        <h1> Rate Us </h1>
+
+        <textarea type="text" class="comment" placeholder="your feedback" onchange="myFunction(this)" cols="8" rows="5" required ></textarea>
+        <br>
+        <label for="rating">Rating</label>
+        <div class="rating" >
+          <input type="radio" id="star5" name="rating" value="5"  >
+          <label for="star5"></label >
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4"></label >
+          <input type="radio" id="star3" name="rating" value="3" >
+          <label for="star3"></label >
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2"></label >
+          <input type="radio" id="star1" name="rating" value="1" >
+          <label for="star1"></label >
+        </div>
+        <br>
+        <button id="submit" type="submit">Send</button>
+      </form>
+
+
+
+    </div>
+
+  </section>
+  <!-- _________________________________________________________________________ -->
+  <pre>
+
+
+
+
+    </pre>
+         <!-- ___________________videos section_______________________  -->
+  <section>
+
+    
+    <iframe class="frame" width="45%" height="320" style="padding: 20px;" src="https://www.youtube.com/embed/_8ul_JORgds" title="اعلان تجاري لمنتج - كاميرا سوني a6600" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="frame" width="45%" height="320" style="padding: 20px;" src="https://www.youtube.com/embed/yN2wcinnynA"
+      title="إعلان دعائي سماعات رأس لاسلكية - Wireless Headphone Commercial advertisement" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+      <iframe class="frame" width="45%" height="320" style="padding: 20px;" src="https://www.youtube.com/embed/H0Jr75JKil0" title="اعلان باور بنك" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe class="frame" width="45%" height="320" style="padding: 20px;" src="https://www.youtube.com/embed/6QkTXiRJCJs" title="AirPods 3rd generation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </section>
+
+  <hr>
+
+    <!-- ___________________footer_________________________ -->
+
+  <footer>
+
+    <div class="contain">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h2>Let's Talk</h2>
+          <p>Email: contact@example.com</p>
+          <p>Phone: +123456789</p>
+        </div>
+        <div class="footer-section">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#navbar" target="_self">Home</a></li>
+            <li><a href="#form" target="_self">Rate Us</a></li>
+            <li><a href="Abuout.html" target="_blank">About</a></li>
+            <li><a href="contact us.html" target="_blank">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hreff">
+      <a href="">Conditions of Use</a>
+      <a href="">Privacy Notice </a>
+      <a href="">Your Ads Privacy Choices</a>
+
+      <p class="copy right"> © 2023, GJ Fox.com, Inc. or its affiliates</p>
+      <ul id="fixed">
+        <li class="activ"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+        <li><a href="" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+      </ul>
+    </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="project.js">
+    
+  </script>
+ 
+</body>
+
+</html>

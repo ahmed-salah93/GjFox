@@ -1,0 +1,160 @@
+
+
+    /* _____________style sheet products________________  */
+
+body{
+    background-image: url(/back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: inherit;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.658);
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    line-height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+.card img{
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 10px 10px 0 0 ;
+    transition: .5s ease-in-out;
+  }
+  .card img:hover{
+    transform: scaleY(1.1);
+    cursor: pointer;
+  }
+  .price {
+    color: rgb(66, 64, 64);
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: black;
+    background-color: #236b2f;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 22px;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+  }
+  
+  .card button:hover { 
+    /* opacity: 0.9; */
+     transform: scaleY(1.1);
+    cursor: pointer; 
+    font-weight: 500;
+     /* background-color: transparent;  */
+  }
+  #navbar{
+    position: static;
+    display: flex;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #192a48;
+    z-index: 5;
+    height: 80px;
+}
+
+
+#headline a{
+    text-decoration: none;
+    font-size: 32px;
+    color: #ffffff;
+}
+#ul ul li{
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    transition: .3s ease-in-out; 
+    letter-spacing: 1px;
+   
+}
+#ul ul a{
+  text-decoration: none;
+  padding: 5px;
+  text-align:center ;
+  margin: 2px;
+  border-radius: 10px;
+}
+#icons a i{
+    padding: 10px;
+    color: #ffffff;
+    font-size: 22px;
+    transition: .4s ease-in-out;
+    margin: 5px;
+    
+    }
+    
+    #icons a i:hover{
+    color: #1f325d;
+    background-color: #ffffffec;
+    border-radius: 50%;
+    
+    }
+    #icons a i span{
+      font-size: 32px;
+      font-weight: 600;
+    }
+    @media screen and (max-width: 575px) {
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      
+      
+      
+      #ul ul a{
+        display: none;
+      }
+      .card{
+        width: 100%;
+      }
+    }
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      
+      
+      
+      #ul ul a{
+        display: none;
+      }
+      .card{
+        width: 100%;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      
+      
+      
+      #ul ul a{
+        display: none;
+      }
+    }

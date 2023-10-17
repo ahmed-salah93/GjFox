@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styleLoginSignUp.css" >
+</head>
+
+
+              <!--____________________login page____________________ -->
+                              
+<body class="body" onload="getData()">
+    
+        <div id="back">
+                <form id="regesterForm" onsubmit="login()">
+            <div class="login-text">login </div>
+            <br>
+            <label for="email"> e-mail :</label>
+            <input type="email" placeholder="example@e-mail.com"  id="email" required>
+            <br>
+            <br>
+            <label for="password">password:</label>
+            <input type="password" placeholder="password" class="password"  required>
+            <br>
+            <span class="have_not">   Don't Have account? </span>
+            <span><a href="signup.html" class="signup-text"> Sign Up </a></span>
+            <br>
+            <br>
+            <button class="login-button" type="submit"><a href="project.html">Login</a></button>
+        </form>
+        </div>
+        
+
+    
+  <script src="project.js"></script>
+</body>
+</html>
